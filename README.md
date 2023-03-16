@@ -1,3 +1,3 @@
-![Login](login.png)
-![Home](home.png)
-![Download](download.png)
+![Login](login.PNG)
+![Home](home.PNG)
+![Download](download.PNG)
