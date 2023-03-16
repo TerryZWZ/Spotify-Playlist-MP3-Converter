@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "dev": "cd server && chmod a+rx node_modules/.bin/concurrently && npm run dev"
+    "dev": "cd server && npm run dev",
+    "vercel-build": "cd server && chmod a+rx node_modules/.bin/concurrently && chmod a+rx node_modules/.bin/nodemon && npm run dev"
   }
 }
