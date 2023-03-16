@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "dev": "cd server && icacls node_modules/.bin/concurrently /GRANT Everyone:F /T && npm run dev"
+    "dev": "cd server && chmod a+rx node_modules/.bin/concurrently && npm run dev"
   }
 }
