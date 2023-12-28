@@ -15,6 +15,8 @@ app.use(cors());
 /* ----- Redirect to downloading MP3 Files from YouTube ---- */
 app.post('/download', (req, res) => {
 
+    console.log("Download route hit");
+
     // Gathering Information from React
     let youtubeLinks = req.body.youtubeLinks;
     let songInfo = req.body.playlist;
@@ -86,5 +88,5 @@ app.post('/download', (req, res) => {
 });
 
 // Run Server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server started on port ${ PORT }`));

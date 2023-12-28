@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "dev": "cd server && npm run dev",
-    "vercel-build": "cd app && npm i vite && cd ../server && chmod a+rx node_modules/.bin/concurrently && chmod a+rx node_modules/.bin/nodemon && npm run dev"
+    "build": "cd server && npm run dev"
+  },
+  "dependencies": {
+    "ytdl-core": "^4.11.5"
   }
 }
