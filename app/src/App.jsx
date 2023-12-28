@@ -5,7 +5,7 @@ import Spotify from 'spotify-web-api-node';
 import './App.css'
 
 // Spotify API Information
-const clientID = '5aec34d6bd124f7b8a37a71f7f8cc3c7';
+const clientID = import.meta.env.VITE_REACT_APP_SPOTIFY_CLIENT_ID;
 const redirectURI = window.location.protocol + '//' + window.location.host + '/callback';
 const AUTHendpoint = 'https://accounts.spotify.com/authorize';
 const responseType = 'token';
@@ -20,7 +20,7 @@ function getToken(hash) {
 }
 
 // YouTube API key
-const APIkey = 'AIzaSyAt4WZYL5_qoikbwqlNBVpj81d0QDNt0h8';
+const APIkey = import.meta.env.VITE_REACT_APP_YOUTUBE_API_KEY;
 
 // Function to search in YouTube API for YouTube videos
 function getLinks(playlist) {
