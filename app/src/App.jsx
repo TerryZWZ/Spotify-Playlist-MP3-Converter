@@ -92,8 +92,9 @@ function App() {
                     promiseLinks = getLinks(playlist); // Finding YouTube Links
 
                     promiseLinks.then((youtubeLinks) => {
+
                         const API_BASE_URL = import.meta.env.VITE_REACT_APP_BACKEND_URL;
-                        console.log(`${API_BASE_URL}/download dawdawd`);
+                        
                         fetch(`${API_BASE_URL}/download`, {
                             method: 'POST',
                             body: JSON.stringify({ youtubeLinks, playlist }),
