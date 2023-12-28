@@ -92,7 +92,7 @@ function App() {
                     promiseLinks = getLinks(playlist); // Finding YouTube Links
 
                     promiseLinks.then((youtubeLinks) => {
-                        fetch('http://localhost:5000/download', {
+                        fetch('/download', {
                             method: 'POST',
                             body: JSON.stringify({ youtubeLinks, playlist }),
                             headers: { 'Content-Type': 'application/json' },
